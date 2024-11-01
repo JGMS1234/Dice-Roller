@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: center;
+    min-height: 100svh;
+    background-image: url('https://images.unsplash.com/photo-1596451190630-186aff535bf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsla(160, 70%, 67%, 0.397);
+    backdrop-filter: blur(10px);
+    padding: 10svh 5svw;
+    padding-bottom: 3svh;
+    text-align: center;
+    box-shadow: 5px 10px 15px rgba(56, 55, 55, 0.863);
+    border-radius: 1.5rem;
+}
+
+#container div {
+    margin-block: 2svh;
+}
+
+#txt_section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70svw;
+    /* background-color: azure; */
+}
+
+#dice_numb {
+    text-align: center;
+    font-weight: bold;
+    padding: 1svh 1.5svw;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 4px 15px grey;
+    width: 40svw;
+}
+
+.label {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    align-self: center;
+    font-weight: bold;
+}
+
+#Roll {
+    padding: 2svh 1.5svw;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 4px 15px grey;;
+    font-size: 1rem;
+    background-color: hsla(133, 87%, 55%, 0.7);
+    color: whitesmoke;
+    border-radius: 1rem;
+}
+
+#Roll:hover {
+    opacity: 0.90;
+    background-color: hsla(133, 87%, 55%, 0.6);
+}
+
+#Roll:active {
+    background-color: hsla(133, 87%, 55%, 0.9);
+}
+
+#dice_img {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    max-width: 45svw;
+    gap: 2svh 5svw;
+}
+
+#dice_img img {
+    width: 10svw;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+@media (max-width: 700px) {
+    #txt_numb {
+        font-size: clamp(0.75rem, 2vw, 1.5rem)
+    }
+}
+/* Commented out styles */
+/*
+body {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
